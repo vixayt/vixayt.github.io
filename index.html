@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Vixay</title>
+  </head>
+  <body>
+    <div class="bg-dark text-light float-none">
+      <a href="/">
+        <button class="btn btn-dark btn-lg">
+          <h3>Vixay</h3>
+        </button>
+      </a>
+      <div class="list-group list-group-horizontal-md float-sm-right">
+        <a href="#About">
+          <button class="btn btn-dark" style="height: 57px">
+            About Me
+          </button>
+        </a>
+        <a href="#Projects">
+          <button class="btn btn-dark" style="height: 57px">
+            Projects
+          </button>
+        </a>
+        <a href="#Contact">
+          <button class="btn btn-dark" style="height: 57px">
+            Contact Me
+          </button>
+        </a>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <h3 style="height: 10rem;" class="text-center pt-5 font-weight-normal">
+          <div>
+            <span class="text-dark"
+              >Hello, my name is
+              <span class="text-success">Theodore Vixay</span>.
+            </span>
+          </div>
+          <div>
+            <span class="text-dark">
+              I am a
+              <span class="text-primary">student</span>
+              <!-- Make button?-->
+            </span>
+            <span class="text-dark">
+              and a
+              <span class="text-primary"> Site Reliability Engineer Intern</span
+              >.<!-- Make button?-->
+            </span>
+          </div>
+        </h3>
+      </div>
+    </section>
+    <section>
+      <h5 class="text-light pl-3 bg-dark" style="line-height: 3rem;" id="About">
+        About Me
+      </h5>
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#education"
+              >Education</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane container active" id="home">
+            Current Work Experience
+          </div>
+          <div class="tab-pane container fade" id="education">
+            Current Schooling
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
