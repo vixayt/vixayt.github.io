@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/62e021808d.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -18,7 +19,7 @@
   <body>
     <nav class="navbar navbar-dark sticky-top navbar-dark bg-dark">
       <a href="/">
-        <h3 class="container text-primary">Vixay</h3>
+        <h3 class="container text-warning">Vixay</h3>
       </a>
       <div class="list-group list-group-horizontal-md float-sm-right pr-3">
         <a nav-link href="#About">
@@ -38,28 +39,28 @@
         </a>
       </div>
     </nav>
-    <section class="bg-light">
-      <div class="jumbotron jumbotron-fluid">
-        <h3 style="height: 10rem;" class="text-center pt-4 font-weight-normal">
-          <div>
-            <span class="text-dark"
-              >Hello, my name is
-              <span class="text-success">Theodore Vixay</span>.
-            </span>
+    <section >
+      <div class="jumbotron jumbotron-fluid bg-info mb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <img src="img/Vixay.JPG" alt="Picture of Ted" />
+            </div>
+            <div class="col-sm">
+              <h1 class="text-light mb-2">Theodore Vixay</h1>
+              <h3
+                style="height: 10rem;"
+                class="text-left pt-4 font-weight-normal"
+              >
+                <div class="text-light mb-2">Student</div>
+                  <!-- Make button?-->
+                  <div class="text-light">
+                    Site Reliability Engineer Intern</div><!-- Make button?-->
+                </div>
+              </h3>
+            </div>
           </div>
-          <div>
-            <span class="text-dark">
-              I am a
-              <span class="text-primary">student</span>
-              <!-- Make button?-->
-            </span>
-            <span class="text-dark">
-              and a
-              <span class="text-primary"> Site Reliability Engineer Intern</span
-              >.<!-- Make button?-->
-            </span>
-          </div>
-        </h3>
+        </div>
       </div>
     </section>
     <section>
@@ -68,9 +69,6 @@
       </h5>
       <div class="container mt-4">
         <div class="row d-flex mx-auto">
-          <div class="col-sm">
-            <img src="img/Vixay.JPG" alt="Picture of Ted" />
-          </div>
           <div class="col-sm">
             <div class="progress" style="height: 2rem;">
               <div class="progress-bar" role="progressbar" style="width: 20%;">
@@ -194,6 +192,17 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
+          <div class="list-group list-group-horizontal-md float-sm-right pr-3">
+            <a class="ml-4" href="https://www.facebook.com/tedvix" target="_blank">
+              <i class="fab fa-facebook-f fa-lg" style="color:#ffc107 !important;"></i>
+            </a>
+            <a class="ml-4" href="https://www.linkedin.com/in/vixayt/" target="_blank">
+              <i class="fab fa-linkedin fa-lg" style="color:#ffc107 !important;"></i>
+            </a>
+            <a class="ml-4" href="https://github.com/vixayt" target="_blank">
+              <i class="fab fa-github fa-lg" style="color:#ffc107 !important;"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
