@@ -44,7 +44,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <img src="img/Vixay.JPG" alt="Picture of Ted" />
+              <img src="img/Vixay.JPG" alt="Picture of Ted" class="rounded"/>
             </div>
             <div class="col-sm">
               <h1 class="text-light mb-2">Theodore Vixay</h1>
@@ -52,9 +52,9 @@
                 style="height: 10rem;"
                 class="text-left pt-4 font-weight-normal"
               >
-                <div class="text-light mb-2">Student</div>
+                <div class="text-light mb-2 jumbotron-student">Student</div>
                   <!-- Make button?-->
-                <div class="text-light">
+                <div class="text-light jumbotron-work">
                   Site Reliability Engineer
                 </div><!-- Make button?-->
               </h3>
@@ -82,18 +82,18 @@
             </ul>
             <div class="tab-content">
               <div class="tab-pane active" id="home">
-                  <div class="mt-2">
-                      I am currently a Site Reliability Engineering Intern 
-                      at Nike. </br></br>
-                      I have previous experience as a SW QA Engineer, where I worked on 
-                      full stack applications in React, Node, and Java. </br></br>
-                      I have experience with cloud technologies, including Amazon
-                      Web Services, Google Cloud Platform, and Azure.
-                    </div>
+                <div class="mt-2">
+                  I am currently a Site Reliability Engineering Intern 
+                  at Nike. </br></br>
+                  I have previous experience as a SW QA Engineer, where I worked on 
+                  full stack applications in React, Node, and Java. </br></br>
+                  I have experience with cloud technologies, including Amazon
+                  Web Services, Google Cloud Platform, and Azure.
                   </div>
+                </div>
               <div class="tab-pane container fade" id="education">
                 <div class="mt-2">
-                  I am currently a graduate student at Portland State University,
+                  I am a current graduate student at Portland State University,
                   studying Computer Science.  </br></br>
                   I currently have a Bachelor's of Science in 
                   Public Health: Health Promotion and Health Behavior
@@ -113,7 +113,7 @@
                 style="width: 60%;"
               ></div>
               <div
-                class="flex-column d-flex justify-content-center text-center pl-5"
+                class="flex-column d-flex justify-content-center text-center pl-4"
               >
                 75%
               </div>
@@ -159,7 +159,7 @@
                 style="width: 60%;"
               ></div>
               <div
-                class="flex-column d-flex justify-content-center text-center pl-5"
+                class="flex-column d-flex justify-content-center text-center pl-4"
               >
                 75%
               </div>
@@ -174,7 +174,7 @@
                 style="width: 60%;"
               ></div>
               <div
-                class="flex-column d-flex justify-content-center text-center pl-5"
+                class="flex-column d-flex justify-content-center text-center pl-4"
               >
                 75%
               </div>
@@ -189,7 +189,7 @@
                 style="width: 60%;"
               ></div>
               <div
-                class="flex-column d-flex justify-content-center text-center pl-5"
+                class="flex-column d-flex justify-content-center text-center pl-4"
               >
                 75%
               </div>
@@ -199,15 +199,98 @@
       </div>
     </section>
     <section>
-      <h5 class="text-light mt-4 pl-3 bg-dark" style="line-height: 3rem;" id="About">
+      <h5 class="text-light mt-4 pl-3 bg-dark" style="line-height: 3rem;" id="Projects">
         Projects
-      </h5>
+      </h5> 
       <div class="container mt-4">
-        Add Projects here
+        <div class="row">
+          <div class="col-4">
+            <div class="card-flip">
+              <div class="card-flip-inner">
+                <div class="card-front text-center">
+                  <h5 class="text-center">
+                    Reddit Image Lambda
+                  </h5>
+                  Amazon Lambda that downloads the top image every few hours to my S3 bucket. </br>
+                </div>
+                <div class="card-back">
+                  <a href="https://github.com/vixayt/topredditimage" target="_blank">
+                    <i class="fab fa-github fa-2x mt-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-flip">
+              <div class="card-flip-inner">
+                <div class="card-front">
+                  <h5 class="text-center">
+                    HomeHub
+                  </h5>
+                  Angular web app to view weather forecasts and TriMet Arrivals. </br>
+                </div>
+                <div class="card-back">
+                  <a href="https://github.com/vixayt/HomeHub2" target="_blank">
+                    <i class="fab fa-github fa-2x mt-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-flip">
+              <div class="card-flip-inner">
+                <div class="card-front">
+                  <h5 class="text-center">
+                    This Website
+                  </h5>
+                  This website is made in mostly HTML and CSS.
+                </div>
+                <div class="card-back">
+                  <a href="https://github.com/vixayt/vixayt.github.io" target="_blank">
+                    <i class="fab fa-github fa-2x mt-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </br>
       </div>
     </section>
-    <section>
-      <div class="mt-4 card-footer bg-dark">
+    <section class="mt-4 card-footer bg-dark text-light">
+      <h5 class="Contact" id="Contact">
+        Contact Me
+      </h5>
+      <div class="contact-me">
+        <form id="contact-me-form" onsubmit="myFunction(); return false">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" id="email" placeholder="Your Email Address" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <input class="form-control" name="subject" id="email" placeholder="Email Subject" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <textarea class="form-control" name="message" id="message" placeholder="Message" style="resize: none;"></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Send Email</button>
+        </form>
+        <script>
+          function myFunction() {
+            document.getElementById('contact-me-form').reset()
+          }
+        </script>
+      </div>
+      <div>
         <div class="text-light">
           Vixay &copy;
           <script>
