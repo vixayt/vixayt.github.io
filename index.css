@@ -24,6 +24,10 @@ a:focus {
   }
 }
 
+.nav-tabs > li > a {
+  color: white;
+}
+
 .card-flip {
   width: 13rem;
   height: 8rem;
